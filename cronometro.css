@@ -1,0 +1,82 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Segoe UI', Tahoma, sans-serif;
+}
+
+body {
+    min-height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: black;
+    color: #fff;
+}
+
+.cronometro {
+    min-height: 100vh;
+    width: 100%;
+    display: grid;
+    grid-template-rows: auto auto auto;
+    justify-items: center;
+}
+
+.cronometro h1 {
+    margin-top: 2rem;
+    margin-bottom: 3rem;
+    font-size: clamp(2.5rem, 6vw, 4rem);
+    font-weight: 800;
+    letter-spacing: 3px;
+}
+
+#display {
+    margin-bottom: 1rem;
+    font-size: clamp(2.5rem, 6vw, 4rem);
+    letter-spacing: 3px;
+}
+
+#botoes {
+    justify-self: center;
+    margin-bottom: 3rem;
+}
+
+#botoes button {
+    padding: 0.6rem 1.4rem;
+    font-size: 1rem;
+    border: none;
+    border-radius: 8px;
+    cursor: pointer;
+    font-weight: 500;
+    transition: all 0.2s ease;
+}
+
+#iniciar {
+    background-color: #000000;
+    color: #ffffff;
+}
+
+#pausar {
+    background-color: #000000;
+    color: #ffffff;
+}
+
+#zerar {
+    background-color: #080808;
+    color: #ffffff;
+}
+
+#iniciar:hover {
+    background-color: #06c01f;
+    color: #000000;
+}
+
+#pausar:hover {
+    background-color: #e69e18;
+    color: #000000;
+}
+
+#zerar:hover {
+    background-color: #e01010;
+    color: #000000;
+}
